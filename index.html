@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sim e Não</title>
+    <style>
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+        display: flex;
+    justify-content: center;
+        align-items: center;
+        height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    background-color: white;
+    color: blue;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.button:hover {   
+transform: scale(1.05);
+
+}
+
+#noButton {
+    position: absolute;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Vicyzinha vai rolar o C*zinho hoje?</h2>
+        <div class="buttons">
+            <button class="button" >
+                <a >Sim</a>
+            </button>
+            <button class="button" id="noButton">Não</button>
+        </div>
+    </div>
+
+    
+</body>
+
+<script>
+
+let button = document.getElementById('noButton');
+
+        let height = window.innerHeight - 50;
+        let width = window.innerWidth - 50;
+
+    noButton.addEventListener('mouseover', function() {
+        button.style.position = "absolute";
+
+    noButton.style.top = Math.random() * height + "px";
+    noButton.style.left = Math.random() * width + "px";
+});
+
+       /* let button = document.getElementById('no');
+        let height = window.innerHeight - 50;
+        let width = window.innerWidth - 50;
+
+        button.addEventListener('mouseover', function() {
+            button.style.position = "absolute";
+            button.style.top = Math.random() * height + "px";
+            button.style.left = Math.random() * width + "px";
+        }) */
+
+    </script>
+
+</html>
